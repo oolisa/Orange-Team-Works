@@ -1,7 +1,6 @@
 #!/bin/bash
-sudo yum update
-sudo yum install httpd -y
-sudo systemctl start httpd
-sudo systemctl enable httpd.service
-sudo su
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd.service
 echo "Apache is running and this is confirmation" > /var/www/html/index.html
