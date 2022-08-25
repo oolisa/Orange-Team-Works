@@ -1,0 +1,34 @@
+#Week 4 Project
+
+#How to Fork, Clone, Push and Pull using Git commands and GitHub.
+#Logging into the server and then
+
+sudo yum install git
+
+git --version
+
+#CLone Repository
+#On the linux terminal we will enter the command below to clone the repository :
+
+git clone https://github.com/oolisa/LevelUpTeam.git // The URL listed here being the clone URL.
+
+cd LevelUpTeam // LevelUpTeam is the <local_repo_path>
+
+#Then we will use the vim command to edit the file in our Repository :
+
+vim linux.sh
+
+#Once we are done making changes to the file, we hit : and type “wq” to save and quit out of the file. Its time to save and commit our change but first we will do a status check on Git.
+
+git status
+
+#Henceforth, We can add the file and commit the changes using these Git commands :
+
+git add linux.sh
+git commit -m "Updated Project added line"
+
+#To push the updated file back to our Github repository, we do :
+
+git push -u origin main
+Username : Github Username
+Password : Authentication Token of Github account
